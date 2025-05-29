@@ -31,6 +31,11 @@ struct WeatherView: View {
                 }
                 .padding(.vertical)
                 
+                Text("Current city: \(viewModel.currentCity)")
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
+                    .padding(.bottom, 8)
+                
                 Group {
                     if viewModel.isLoading {
                         ProgressView()
